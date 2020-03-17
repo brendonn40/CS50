@@ -5,23 +5,24 @@ programa
 programa deverá ler a matrícula e o salário. Ao final, o programa deverá exibir o maior salário da
 empresa e quantos funcionários ganham este maior salário.
 	 */
+	 const inteiro tamanho=100
 funcao inicio()
 	{
-		inteiro matr[100],i,iguais=0
-		real salario[100],soma=0,maior=0
+		inteiro matr[tamanho],i,iguais=0
+		real salario[tamanho],soma=0,maior=0
 
-		para(i=0;i<=99;i++)
+		para(i=0;i<tamanho;i++)
 	{
 		escreva("Digite a matricula do funcionario ",i+1,": ")
 		leia(matr[i])
 		escreva("Digite o valor do salario deste funcionario: ")
 		leia(salario[i])
 		}
-		para(i=0;i<=99;i++)
+		para(i=0;i<tamanho;i++)
 		{
 		soma+=salario[i]
 		}
-		para(i=0;i<=99;i++)
+		para(i=0;i<tamanho;i++)
 		{
 			se(salario[i]>maior)
 		{	
@@ -29,7 +30,7 @@ funcao inicio()
 			
 			}
 			}
-		para(i=0;i<=99;i++)
+		para(i=0;i<tamanho;i++)
 		{
 			se(maior==salario[i])
 			{
@@ -45,7 +46,7 @@ funcao inicio()
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 852; 
+ * @POSICAO-CURSOR = 906; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

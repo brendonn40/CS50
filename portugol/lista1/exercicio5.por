@@ -6,13 +6,13 @@ escreva um programa que leia um valor inteiro em reais (R$) e determine o menor 
 para se obter o montante fornecido. O seu programa deve exibir o número de notas para cada um dos
 valores de nota existentes.
 	 */
-	
+	const inteiro tamanho=7
 	funcao inicio()
 	{
-		inteiro valor,notas[7]={100,50,20,10,5,2,1},contador,qtd[7]
+		inteiro valor,notas[7]={100,50,20,10,5,2,1},contador,qtd[tamanho]
 		escreva("Digite o valor: ")
 		leia(valor)
-		para(contador=0;contador < 7;contador++)
+		para(contador=0;contador < tamanho;contador++)
 	{	
 		se(valor/notas[contador] > 0)
 	{
@@ -25,7 +25,7 @@ valores de nota existentes.
 			}
 		}
 		escreva("Quantidade\t\tNota\n")
-		para(contador=0;contador < 7;contador++) 
+		para(contador=0;contador < tamanho;contador++) 
 	{
 		escreva(qtd[contador],"\t\t\t",notas[contador],"\n")
 		}
