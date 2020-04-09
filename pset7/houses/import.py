@@ -22,4 +22,4 @@ with open (argv[1],"r") as characters:
         else:
             db.execute("INSERT INTO students (id , first , middle , last , house ,birth) VALUES(?, ?, ?, ?,?,?)",id,names[0],None,names[1],house,birth)
             id+=1
-# TODO
+
